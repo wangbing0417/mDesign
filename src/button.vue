@@ -1,7 +1,6 @@
 <template>
   <button class="m-button" :class="{ [`icon-${iconPosition}`]: true }">
-    <!-- <svg v-if="icon" class="icon"><use :xlink:href="`#i-${icon}`"></use></svg> -->
-    <m-icon v-if="icon" :name="icon"></m-icon>
+    <m-icon class="icon" v-if="icon" :name="icon"></m-icon>
     <div class="content">
       <slot></slot>
     </div>
@@ -50,14 +49,14 @@ export default {
     &:focus
         outline: none
 
-    > .m-icon
+    > .icon
         order: 1
         margin-right: 0.3em
     > .content
         order: 2
 
     &.icon-right
-        > .m-icon
+        > .icon
             order: 2
             margin-right: 0
             margin-left: 0.3em
