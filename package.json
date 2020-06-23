@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "\"个人组件库\"",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "parcel index.html --no-cache"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wangbing0417/mDesign.git"
@@ -22,7 +24,10 @@
     "vue-hot-reload-api": "^2.3.4"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "@vue/component-compiler-utils": "^3.1.2",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.9",
+    "vue-template-compiler": "^2.6.11"
   },
   "alias": {
     "vue": "./node_modules/vue/dist/vue.common.js"
