@@ -1,6 +1,7 @@
 <template>
   <button class="m-button" :class="{ [`icon-${iconPosition}`]: true }">
-    <svg v-if="icon" class="icon"><use :xlink:href="`#i-${icon}`"></use></svg>
+    <!-- <svg v-if="icon" class="icon"><use :xlink:href="`#i-${icon}`"></use></svg> -->
+    <m-icon v-if="icon" :name="icon"></m-icon>
     <div class="content">
       <slot></slot>
     </div>
@@ -28,7 +29,7 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 .m-button
     font-size: var(--font-size)
     height: var(--button-height)
@@ -49,14 +50,14 @@ export default {
     &:focus
         outline: none
 
-    > .icon
+    > .m-icon
         order: 1
         margin-right: 0.3em
     > .content
         order: 2
 
     &.icon-right
-        > .icon
+        > .m-icon
             order: 2
             margin-right: 0
             margin-left: 0.3em
