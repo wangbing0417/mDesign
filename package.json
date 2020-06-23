@@ -1,0 +1,20 @@
+{
+  "name": "mdesign",
+  "version": "0.0.1",
+  "description": "\"个人组件库\"",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wangbing0417/mDesign.git"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "wangbing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wangbing0417/mDesign/issues"
+  },
+  "homepage": "https://github.com/wangbing0417/mDesign#readme"
+}
