@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/wangbing0417/mDesign/issues"
   },
-  "homepage": "https://github.com/wangbing0417/mDesign#readme"
+  "homepage": "https://github.com/wangbing0417/mDesign#readme",
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
 }
