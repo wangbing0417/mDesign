@@ -13,14 +13,9 @@ export default {
   name: 'm-button',
   props: {
     // icon的类型
-    icon: {
-      type: String,
-      default: ''
-    },
-    loading: {
-      type: Boolean,
-      default: false
-    },
+    icon: { type: String, default: '' },
+    // icon loading
+    loading: { type: Boolean, default: false },
     // 控制icon的左右位置
     iconPosition: {
       type: String,
