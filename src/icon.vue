@@ -1,5 +1,7 @@
 <template>
-  <svg class="m-icon"><use :xlink:href="`#i-${name}`"></use></svg>
+  <svg class="m-icon">
+    <use :xlink:href="`#i-${name}`" />
+  </svg>
 </template>
 
 <script>
@@ -10,8 +12,9 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-.m-icon
-    width: 1em
-    height: 1em
+<style lang="scss" scoped>
+.m-icon {
+  width: 1em;
+  height: 1em;
+}
 </style>

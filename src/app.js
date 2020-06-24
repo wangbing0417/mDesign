@@ -7,5 +7,9 @@ Vue.component('m-icon', mIcon)
 
 new Vue({
   el: '#app',
-  data: {}
+  data: {
+    loading1: true,
+    loading2: true,
+    loading3: true
+  }
 })
