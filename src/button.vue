@@ -9,8 +9,13 @@
 </template>
 
 <script>
+import Icon from './icon'
+
 export default {
   name: 'm-button',
+  components: {
+    'm-icon': Icon
+  },
   props: {
     // icon的类型
     icon: { type: String, default: '' },
