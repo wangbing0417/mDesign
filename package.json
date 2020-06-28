@@ -1,13 +1,12 @@
 {
   "name": "mdesign",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "个人组件库",
   "main": "dist/index.js",
   "scripts": {
     "start": "parcel index.html --no-cache",
     "test": "parcel build test/* --no-cache --no-minify && karma start --single-run",
-    "dev-test": "parcel watch test/* --no-cache & karma start",
-    "publish": "parcel build index.js --no-cache --no-minify && npm publish"
+    "dev-test": "parcel watch test/* --no-cache & karma start"
   },
   "repository": {
     "type": "git",
