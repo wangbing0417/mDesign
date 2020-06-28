@@ -19,7 +19,7 @@ module.exports = config => {
     colors: true,
     logLevel: config.LOG_INFO,
     authWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['ChromeHeadless'],
     singleRun: false,
     concurrency: Infinity
   })
