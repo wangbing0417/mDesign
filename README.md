@@ -25,3 +25,16 @@ npm i -D karma karma-chrome-launcher karma-mocha karma-sinon-chai mocha sinon si
 2. 创建karma配置
 
 ```
+
+发布到 npmjs 官网
+
+```js
+注册 npmjs 个人账号
+parcel build index.js --no-minify --no-cache
+npm publish
+
+使用者只需要安装就行 npm i mdesign
+
+目前使用的时候注意样式和 icon 的引入问题
+
+```
