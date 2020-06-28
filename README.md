@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/wangbing0417/mDesign.svg?branch=master)](https://travis-ci.org/wangbing0417/mDesign)
+
 # mDesign
 
 开发个人组件库，方便工作使用
