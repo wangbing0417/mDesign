@@ -30,19 +30,33 @@
       }
     </style>
 
-    <style></style>
+    <style>
+      .box {
+        margin: 20px;
+      }
+    </style>
   </head>
   <body>
     <div id="app">
-      <m-button :loading="loading1" @click="loading1=!loading1"> 按钮</m-button>
-      <m-button icon="settings" :loading="loading2" @click="loading2=!loading2"> 按钮</m-button>
-      <m-button icon="settings" icon-position="right" :loading="loading3" @click="loading3=!loading3"> 按钮</m-button>
+      <div class="box">
+        <m-input></m-input>
+        <m-input readonly value="张三"></m-input>
+        <m-input disabled value="lisi"></m-input>
+        <m-input value="zhangsan" error="不能超过10个字"></m-input>
+        <m-input value="zhangsan" @change="inputChange"></m-input>
+      </div>
 
-      <m-button-group>
-        <m-button icon="left">上一页</m-button>
-        <m-button>更多</m-button>
-        <m-button icon="right" icon-position="right">下一页</m-button>
-      </m-button-group>
+      <div class="box">
+        <m-button :loading="loading1" @click="loading1=!loading1"> 按钮</m-button>
+        <m-button icon="settings" :loading="loading2" @click="loading2=!loading2"> 按钮</m-button>
+        <m-button icon="settings" icon-position="right" :loading="loading3" @click="loading3=!loading3"> 按钮</m-button>
+
+        <m-button-group>
+          <m-button icon="left">上一页</m-button>
+          <m-button>更多</m-button>
+          <m-button icon="right" icon-position="right">下一页</m-button>
+        </m-button-group>
+      </div>
     </div>
 
     <script src="./src/app.js"></script>
