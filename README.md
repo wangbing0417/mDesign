@@ -79,9 +79,3 @@ export default {
   }
 }
 ```
-
-4. 引入 svg symbols
-
-```html
-<script src="//at.alicdn.com/t/font_1902018_m3j45t4o4j.js"></script>
-```
