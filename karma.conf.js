@@ -20,7 +20,7 @@ module.exports = config => {
     logLevel: config.LOG_INFO,
     authWatch: true,
     browsers: ['Chrome'],
-    singleRun: true,
+    singleRun: false,
     concurrency: Infinity
   })
 }
