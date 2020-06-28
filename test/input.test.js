@@ -84,10 +84,12 @@ describe('Input', () => {
 
         // 触发 input 控件的 change 事件
         let event = new Event(evt, { bubbles: true, cancelable: false })
+
+        Object.defineProperty(event, 'target', { value: 2, enumerable: true })
         let inputElement = vm.$el.querySelector('input')
         inputElement.dispatchEvent(event)
 
-        expect(cb).to.have.been.calledWith(event)
+        expect(cb).to.have.been.calledWith(event.target.value)
       })
     })
   })
