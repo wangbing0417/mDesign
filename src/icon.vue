@@ -8,6 +8,7 @@
 import './svg'
 
 export default {
+  name: 'm-icon',
   props: {
     name: {}
   }
