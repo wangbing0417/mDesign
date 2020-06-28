@@ -12,6 +12,7 @@ module.exports = config => {
     files: ['dist/**/*.test.js', 'dist/**/*.test.css'],
     exclude: [],
     preprocessors: {},
+    // 测试结果输出，默认提供 dots 与 progress 两种
     reporters: ['progress'],
 
     // web server port
